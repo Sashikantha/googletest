@@ -470,7 +470,7 @@ $var param_field_decls2 = [[$for j
           $impl_inits {}\
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
-          ::testing::MatchResultListener* result_listener) const;\
+          ::testing::MatchResultListener* result_listener) const override;\
       virtual void DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
